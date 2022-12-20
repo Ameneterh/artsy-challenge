@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/products.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=STIX Two Text" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet" />
+    <title>Marketplace</title>
+  </head>
+
+  <body>
+    <header id="site-header">
+      <nav id="head-nav">
+        <a id="site-title" href="index.html">ARTSY.</a>
+
+        <div id="nav-list">
+          <ul>
+            <li><a id="inactive" href="index.html">Home</li></a>
+            <li><a class="active" href="products.html">Marketplace</li></a>
+            <li><a id="inactive" href="auctions.html">Auctions</li></a>
+            <li><a id="inactive" href="drop.html">Drop</li></a>
+          </ul>
+        </div>
+
+        <div id="nav-images">
+          <img class="images" src="/images/Search icon.png" alt="search icon" />
+          <img class="images" src="/images/Cart icon.png" alt="cart icon" />
+          <img class="images" src="/images/Notification icon.png" alt="notification icon" />
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div id="top-section">
+        <div>
+          <form id="search-form">
+            <input type="text" id="search" placeholder="search">
+          </form>
+        </div>
+        <div id="sort">
+          <p>See 1-6 of 15 results</p>
+          <select>
+            <option>Sort by</option>
+            <option>Category</option>
+            <option>Price</option>
+            <option>Artist</option>
+            <option>Collection year</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="mid-section">
+        <div id="mid-left">
+          <div id="filter">
+            <img src="/images/filter-icon.png" alt="filter">
+            <p>Filter</p>
+          </div>
+          <div id="thick-line"></div>
+
+          <div class="filter-categories">
+            <h2>By category</h2>
+            <img src="/images/close-filter.png" alt="close up filter">
+          </div>
+          <form id="by-category">
+            <input type="checkbox" id="editorials" checked>
+            <label for="editorials">Editorials</label><br />
+
+            <input type="checkbox" id="fashion" checked>
+            <label for="fashion">Fashion</label><br />
+
+            <input type="checkbox" id="optics" >
+            <label for="optics">Optics</label><br />
+
+            <input type="checkbox" id="art-museum" >
+            <label for="art-museum">Art & Museum</label><br />
+
+            <input type="checkbox" id="nature" >
+            <label for="nature">Nature</label><br />
+          </form>
+
+          <div class="filter-categories">
+            <h2>By price</h2>
+            <img src="/images/close-filter.png" alt="close up filter">
+          </div>
+          <p id="price-tag"><span id="min-value">$100.00</span> - <span id="max-value">$150.00</span></p>
+          <div id="slider">
+            <input type="range" value="0" min="100" max="150" id="range-slider-1">
+            <input type="range" value="0" min="150" max="200" id="range-slider-2">
+          </div>
+
+          <div class="filter-categories">
+            <h2>By artist</h2>
+            <img src="/images/close-filter.png" alt="close up filter">
+          </div>
+          <ul id="by-artist">
+            <li><a href="#">All</a></li>
+            <li>Below $100.00</li>
+            <li>$100.00 - $150.00</li>
+            <li>$150.00 - $200.00</li>
+            <li>Above $200.00</li>
+          </ul>
+
+          <div class="filter-categories">
+            <h2>Collection year</h2>
+            <img src="/images/close-filter.png" alt="close up filter">
+          </div>
+        </div>
+
+        <!-- 1st level -->
+        <div id="mid-right">
+          <div class="product-image-containers">
+            <a href="product-details.html"><div class="product-image">
+              <img src="/images/Philomena.png" alt="Philomena">
+              <p>PHILOMENA ‘22</p>
+              <h3>$3.90</h3>
+            </div></a>
+            <div class="product-image">
+              <img src="/images/Boolean Egyptian.png" alt="Boolean Egyptian">
+              <p>BOOLEAN EGYPTIAN</p>
+              <h3>$3.90</h3>
+            </div>
+            <div class="product-image">
+              <img src="/images/Blanc.png" alt="Blanc">
+              <p>BLANC</p>
+              <h3>$3.90</h3>
+            </div>
+          </div>
+
+          <!-- 2nd level -->
+          <div class="product-image-containers">
+            <div class="product-image">
+              <img src="/images/Ellipsia.png" alt="Ellipsia">
+              <p>ELLIPSIA</p>
+              <h3>$3.90</h3>
+            </div>            
+            <div class="product-image">
+              <img src="/images/The-lawmakers.png" alt="The lawmakers">
+              <p>THE LAWMAKERS</p>
+              <h3>$3.90</h3>
+            </div>
+            <div class="product-image">
+              <img src="/images/Veil.png" alt="Veil">
+              <p>VEIL</p>
+              <h3>$3.90</h3>
+            </div>
+          </div>
+
+          <!-- 3rd level -->
+          <div class="product-image-containers">
+            <div class="product-image">
+              <img src="/images/Alternating.png" alt="Alternating">
+              <p>ALTERNATING</p>
+              <h3>$3.90</h3>
+            </div>            
+            <div class="product-image">
+              <img src="/images/Rosemary.png" alt="Rosemary">
+              <p>ROSEMARY ‘22</p>
+              <h3>$3.90</h3>
+            </div>
+            <div class="product-image">
+              <img src="/images/Beverly.png" alt="Beverly">
+              <p>BEVERLY</p>
+              <h3>$3.90</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom-section">
+        <button type="button" id="see-more">See more</button>
+      </div>
+    </main>  
+  </body>
+</html>
