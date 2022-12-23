@@ -147,13 +147,91 @@ li {
 }
 
 #product-details {
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  overflow: hidden;
   width: 100%;
-  height: 1020px;
+  height: fit-content;
   margin-bottom: 50px;
+  /* padding: 0 0 -2 0; */
   border: 1px solid black;
 }
 
+#left {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left img {
+  width: 100%;
+  height: 100%;
+}
+
+#right {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#right-one {
+  box-sizing: border-box;
+  margin: -2px -2px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 115px;
+  border: 1px solid black;
+}
+
+#rt-1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 97.6%;
+  color: #333333;
+}
+
+#right-two {
+  box-sizing: border-box;
+  margin: -1px -2px 0 0;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 586px;
+  border: 1px solid black;
+}
+
+#right-three,
+#right-four,
+#right-five {
+  box-sizing: border-box;
+  margin: -1px -2px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 110px;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
 #explore-more {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,249 +273,166 @@ li {
 
 #similar-products {
   width: 100%;
-  height: 300px;
-  left: 20%;
-  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 50px 20%;
 }
 
-#search-form {
-  width: 200px;
-  height: 70px;
-  padding: 0 10px;
-  background: #f4f2f2;
-  border-radius: 15px;
-  border: none;
+.similar-prod-img {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+  margin: 0 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 529px; */
+  width: fit-content;
+  height: 579px;
+  background: #ffffff;
+  border: 1px solid #333333;
 }
 
-#search {
+#hide-img {
+  visibility: hidden;
+}
+
+.similar-top {
   width: 100%;
-  height: 70px;
-  padding: 0 30px;
-  background: #f4f2f2;
-  border-radius: 15px;
-  border: none;
-  background-image: url(/images/mkt-search-img.png);
-  background-repeat: no-repeat;
-  background-position: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prod-img {
+  width: 420px;
+  height: 421px;
+  background: url(.jpg), #d9d9d9;
+}
+
+.similar-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-two-content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#creator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#creator p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 97.6%;
+  color: #616161;
+}
+
+#btm-rt-blue {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-  color: #999999;
+  font-size: 30px;
+  line-height: 97.6%;
+  color: #4693ed;
 }
 
-input:focus {
-  outline: none;
-}
-
-#sort {
+#made-in {
+  width: 100%;
   display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: space-between;
-  width: 75%;
-  height: 80px;
-  background: #ffffff;
-  box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 0 20px;
-}
-
-#sort p {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 157.6%;
+  line-height: 97.6%;
   color: #000000;
 }
 
-select {
-  box-sizing: border-box;
-  width: 191px;
-  height: 40px;
-  border: 0.4px solid #000000;
-  border-radius: 8px;
+#views {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 157.6%;
+  font-size: 28px;
+  line-height: 97.6%;
   color: #000000;
 }
 
-#mid-section {
-  box-sizing: border-box;
+#qty-to-order {
   width: 100%;
-  margin: 70px 0;
   display: flex;
-  justify-content: space-between;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 97.6%;
+  color: #333333;
 }
 
-#mid-left {
-  box-sizing: border-box;
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-}
-
-#filter {
-  width: 100%;
+#subtract,
+#add {
+  width: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  margin: 20px 0 30px 0;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 97.6%;
+  color: #333333;
 }
 
-#filter img {
-  width: 35.33px;
-  height: 39.76px;
+#add {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#filter p {
+#btn-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 87px;
+  width: 315px;
+  height: 79px;
+  background-image: url("/images/right-arrow-2.png");
+  background: #3341c1;
+  border-radius: 3px;
+  border: none;
+}
+
+.similar-bottom p {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 157.6%;
-  color: #000000;
-  margin-left: 20px;
+  line-height: 97.6%;
+  color: #333333;
 }
 
-#thick-line {
-  width: 100%;
-  height: 6px;
-  background: #afb091;
-  border-radius: 10px;
-}
-
-.filter-categories {
-  width: 100%;
-  margin-top: 61px;
+.bottom-right {
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.filter-categories h2 {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 157.6%;
-  color: #000000;
-}
-
-#by-artist {
-  margin-top: 50px;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #292929;
-}
-
-#by-artist li {
-  margin-bottom: 30px;
-}
-
-#by-category {
-  margin-top: 100px;
-}
-
-#editorials,
-#fashion,
-#optics,
-#art-museum,
-#nature {
-  height: 20px;
-  width: 20px;
-  margin-bottom: 30px;
-}
-
-label {
-  margin-left: 20px;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #292929;
-}
-
-#price-tag {
-  margin: 30px 0 30px 0;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #292929;
-}
-
-#slider {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-}
-
-#range-slider-1 {
-  width: 50%;
-  background: black;
-}
-
-#range-slider-2 {
-  margin-left: -10px;
-  width: 50%;
-}
-
-#mid-right {
-  box-sizing: border-box;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-}
-
-.product-image-containers {
-  box-sizing: border-box;
-  margin-bottom: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.product-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 269px;
-  height: 414px;
-  background: #ffffff;
-  box-shadow: 0px 34px 68px rgba(217, 225, 244, 0.36);
-  border-radius: 15px;
-}
-
-.product-image p {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 157.6%;
-  color: #333333;
-}
-
-.product-image h3 {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 157.6%;
-  color: #333333;
 }
 
 #bottom-section {
@@ -445,20 +440,31 @@ label {
 }
 
 #see-more {
+  border: 2px solid;
+
   box-sizing: border-box;
-  margin-bottom: 200px;
+  margin-top: 50px;
   width: 249px;
   height: 73px;
-  border: 1px solid #333333;
-  background: none;
-  border-radius: 10px;
+  /* background: none; */
+  border-radius: 16px;
+
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 41px;
-  color: #333333;
-  cursor: pointer;
+  font-size: 36px;
+  line-height: 97.6%;
+  /* or 35px */
+
+  background: linear-gradient(
+    94.97deg,
+    #78a3ad 24.64%,
+    rgba(192, 86, 9, 0.49) 118.54%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
 @media screen and (max-width: 600px) {

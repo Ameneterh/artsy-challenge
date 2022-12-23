@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/auctions.css" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css?family=STIX+Two+Text" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet" />
+  <title>Auctions</title>
+</head>
+
+<body>
+  <header id="site-header">
+    <nav id="head-nav">
+      <a id="site-title" href="index.html">ARTSY.</a>
+
+      <div id="nav-list">
+        <ul>
+          <li><a id="inactive" href="index.html">Home</li></a>
+          <li><a id="inactive" href="products.html">Marketplace</li></a>
+          <li><a class="active" href="auctions.html">Auctions</li></a>
+          <li><a id="inactive" href="drop.html">Drop</li></a>
+        </ul>
+      </div>
+
+      <div id="nav-images">
+        <img class="images" src="/images/Search icon.png" alt="search icon" />
+        <img class="images" src="/images/Cart icon.png" alt="cart icon" />
+        <img class="images" src="/images/Notification icon.png" alt="notification icon" />
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div id="show-display">
+      <p>Home/<span id="current-folder">Auctions</span></p>
+    </div>
+    <div id="products-overview">
+      <p>Here’s an overview of products actively on auction, explore!</p>
+      <div id="overview">
+        <div class="show-overview" id="over-1">
+          <div class="timer">
+            <p>6hr : 40mins: 15s</p>
+          </div>
+        </div>
+        <div class="show-overview" id="over-2">
+          <div class="timer">
+            <p>6hr : 40mins: 15s</p>
+          </div>
+        </div>
+        <div class="show-overview" id="over-3">
+          <div class="timer">
+            <p>6hr : 40mins: 15s</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="indicators">
+      <div id="blue-bkg" class="round-dots"></div>
+      <div class="round-dots"></div>
+      <div class="round-dots"></div>
+      <div class="round-dots"></div>
+    </div>
+    <div id="top-bids">
+      <p>Top bids from popular creators</p>
+      <div id="bids-container">
+        <div class="bids">
+          <div class="bid-top">
+            <div class="round-container">
+              <img src="/images/heart-1.png">
+            </div>
+          </div>
+          <img src="/images/bid-1.png" alt="First Bid Image">
+          <div class="bid-bottom">
+            <p>Out of the box</p>
+          </div>
+        </div>
+        <div class="bids">
+          <div class="bid-top">
+            <div class="round-container">
+              <img src="/images/heart-2.png">
+            </div>
+          </div>
+          <img src="/images/bid-2.png" alt="Second Bid Image">
+          <div class="bid-bottom">
+            <p>Falling apart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="place-bids">
+      <div class="place-bids-container">
+        <p>Creator : <span id="creator">Dan Murray</span></p>
+        <p>Date :<span id="date">12/08/22</span></p>
+        <p>Highest bid :<span id="highest-bid">0.57 ETH</span></p>
+        <div class="place-bottom">
+          <div class="current-bid">
+            <p>Current bid</p>
+            <p id="mybid-1">0.987 ETH</p>
+          </div>
+          <div class="bid-btn">Place bid</div>
+        </div>
+      </div>
+
+      <div class="place-bids-container">
+        <p>Creator : <span id="creator">Dan Murray</span></p>
+        <p>Date :<span id="date">12/08/22</span></p>
+        <p>Highest bid :<span id="highest-bid">0.57 ETH</span></p>
+        <div class="place-bottom">
+          <div class="current-bid">
+            <p>Current bid</p>
+            <p id="mybid-2">0.987 ETH</p>
+          </div>
+          <div class="bid-btn">Place bid</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal for Live Auction -->
+  <div class="liveAuctions" id="liveAuctions">
+    <h2>Home/Auctions/<span id="liveBid">Live bid</span></h2>
+    <div id="liveBidContent">
+      <div id="liveBidContent-Left">
+        <div class="closeLiveAuctions">
+          <img src="/images/Group 510.png">
+        </div>
+        <p id="live-show">LIVE</p>
+        <img src="/images/live-bid-img.png">
+        <div id="topInfo">
+          <p id="currentBid">Current bid $4500</p>
+        </div>
+
+        <div id="tags">
+          <p id="tag-line">Tag: Lost or Wither</p>
+        </div>
+      </div>
+      <div id="liveBidContent-Right">
+        <div id="right-content">
+          <div class="right-picture">
+            <img class="theImage" src="/images/Taylor Allen.png">
+            <div class="theName">
+              <h3>Taylor Ellen</h3>
+              <p>$45.00 instant bid</p>
+            </div>
+          </div>
+
+          <div class="right-picture">
+            <img class="theImage" src="/images/Ella Flynn.png">
+            <div class="theName">
+              <h3>Ella Flynn</h3>
+              <p>Tight bid</p>
+            </div>
+          </div>
+
+          <div class="right-picture">
+            <img class="theImage" src="/images/Uncle Luca.png">
+            <div class="theName">
+              <h3>Uncle Luca</h3>
+              <p>instant bid</p>
+            </div>
+          </div>
+
+          <div class="right-picture">
+            <img class="theImage" src="/images/Opeyemi Tiwalope.png">
+            <div class="theName">
+              <h3>Opeyemi Tiwalope</h3>
+              <p>$45.00</p>
+            </div>
+          </div>
+
+          <div class="right-picture">
+            <img class="theImage" src="/images/Celestine Quinn.png">
+            <div class="theName">
+              <h3>Celestine Quinn</h3>
+              <p>gm frens! ready to bidddd</p>
+            </div>
+          </div>
+
+          <div class="right-picture">
+            <img class="theImage" src="/images/Sammy Ellen.png">
+            <div class="theName">
+              <h3>Sammy Ellen</h3>
+              <p>i love this. $20.00 for me</p>
+            </div>
+          </div>
+
+          <div id="right-bottom">
+            <p>Creator : Stormi Rylie</p>
+            <div id="place-bid">
+              <input type="text" id="bidValue" placeholder="Place a bid...">
+              <div id="heart-container"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="upcoming-drops">
+      <p>See upcoming drops</p>
+      <img src="/images/right-arrow-circle.png">
+    </div>
+  </div>
+
+
+
+  <script src="/scripts/live-auctions.js">
+  </script>
+</body>
+
+</html>
